@@ -95,8 +95,7 @@ python-dateutil==2.8.1
 
 
 
-pywin32==228
-pywin32-ctypes==0.2.0
+
 pywinpty==0.5.7
 pyzmq==21.0.1
 qtconsole==5.0.1
