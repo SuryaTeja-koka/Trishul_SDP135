@@ -28,7 +28,7 @@ SECRET_KEY = 'd3k*si33zc3%5nlql#o@w^qc6g2+!9$5hgkbqhm9lrab5o+qrw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', 'trishul-app.herokuapp.com']
 
 # Application definition
 
