@@ -61,7 +61,7 @@ matplotlib==3.3.2
 mccabe==0.6.1
 mistune==0.8.4
 mysql-connector==2.2.9
-mysqlclient @ file:///C:/Users/SURYA%20TEJA/Desktop/Trisul/trisul_django/mytrisul/mysqlclient-1.4.6-cp38-cp38-win32.whl
+
 nbclassic==0.2.6
 nbclient==0.5.1
 nbconvert==6.0.7
