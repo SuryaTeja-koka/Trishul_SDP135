@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+        rel="stylesheet"
+        href="{% static 'task_group/css/new.css' %}"
+        type="text/css"
+      />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="base">
+      <div class="title">
+        <p class="title-text">Trisul (Service Management System)</p>
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{% url 'task_group:tlist' %}"  <p class="title-text" style="text-align: right;font-size:20px">Home</p></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        
+        <a href="{% url 'appointment' %}"  <p class="title-text" style="text-align: right;font-size:20px">Appointment</p></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="{% url 'mp2' %}"  <p class="title-text" style="text-align: right;font-size:20px">Knapsack</p></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="{% url 'visualization' %}" target="_blank" <p class="title-text" style="text-align: right;font-size:20px">Visualization</p></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="{% url 'index' %}" <p class="title-text" style="text-align: right;font-size:20px">LogOut</p></a>
+      </div>
+<h3 align = center class="whiteTextOverride"><u>Appointment Table</u></h3>
+<table class="whiteTextOverride" align =center border=3 widht =100000 >
+<tr class="whiteTextOverride">
+
+<th >Id</th>
+<th >DocId</th>
+<th>DocName</th>
+<th>Doc_Mail</th>
+<th>Date_Time</th>
+<th>Specilization</th>
+<th>Patient_Name</th>
+<th>Done</th>
+<th>Delete</th>
+</tr>
+{% for aps in ap%}
+<tr>
+<td>{{aps.id}}</td>
+<td>{{aps.DocId}}</td>
+<td>{{aps.DocName}}</td>
+<td>{{aps.Doc_Mail}}</td>
+<td>{{aps.Date_Time}}</td>
+<td>{{aps.Specilization}}</td>
+<td>{{aps.Patient_Name}}</td>
+<td align = center><a href = "/updateuser/{{aps.id}}">{{aps.done}}</td>
+<td align = center><a href = "/deleteuser/{{aps.id}}">Delete</td>
+</tr>
+{% empty %}
+<h3 align =center class="whiteTextOverride" >No Records Found</h3>
+{% endfor %}
+</table >
+      </div>
+      <div class="footer">
+        <p>Developed by SDP - 135</p>
+      </div>
+    </div>
+  </body>
+</html>
