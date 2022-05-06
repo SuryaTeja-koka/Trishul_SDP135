@@ -35,3 +35,4 @@ else:
 7) py manage.py makemigrations
 8) py manage.py migrate
 9) py manage.py runserver
+10)app runs at http://localhost:8000.
