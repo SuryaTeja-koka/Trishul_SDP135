@@ -29,7 +29,7 @@ SECRET_KEY = 'd3k*si33zc3%5nlql#o@w^qc6g2+!9$5hgkbqhm9lrab5o+qrw'
 DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1',
-                 'trishul-hospital-management.herokuapp.com/']
+                 'trishul.herokuapp.com/']
 
 # Application definition
 
